@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Saliou Samba DIAO" description="A propos de Saliou Samba DIAO">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Merci de vous arretez par ici, pour voir plus à propos de moi !"
+			></Hero>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						D'une formation initiale d'un scientifique depuis le lycée, j'ai suivi les Mathématiques-Physiques-Informatique à la faculté des Sciences et Techniques de l'Université Cheikh Anta Diop de Dakar jusqu'à la licence 3 que j'ai arreté au second semestre pour une raison de croisement des cours avec ma formation actuelle en Conception en Informatique à l'École Superieure Polythechnique de Dakar.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Éducation</h2>
+				<div class="content">
+					<p>- Baccalaureat Scientifique avec Mention Bien en S1</p>
+					<i>Lycée Babacar Cobar Ndao de Kaffrine en 2018</i>
+					<p>- Licence 1 en Mathématiques-Physiques-Informatique</p>
+					<i>Faculté des Sciences et Techniques de l'Université Cheikh Anta Diop de Dakar en 2019 </i>
+					<p>- Licence 2 en Mathématiques-Physiques-Informatique</p>
+					<i>Faculté des Sciences et Techniques de l'Université Cheikh Anta Diop de Dakar en 2020</i>
+					<p>- Licence 3 en Mathématiques-Physiques-Informatique non achevée</p>
+					<i>Faculté des Sciences et Techniques de l'Université Cheikh Anta Diop de Dakar en 2021</i>
+					<p>- Première année en Conception Informatique</p>
+					<i>Département Génie Informatique de l'École Superieure Polytechnique de Dakar en 2022</i>
+					<p>- Deuxième année en Conception Informatique</p>
+					<i>Département Génie Informatique de l'École Superieure Polytechnique de Dakar en 2023</i>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<p>HTML-CSS</p><i>100%</i>
+					<p>JAVASCRIPT</p><i>90%</i>
+					<p>PHP</p><i>98%</i>
+					<p>NODE.JS</p><i>90%</i>
+					<p>REACT</p><i>95%</i>
+					<p>FLUTTER</p><i>98%</i>
+					<p>DJANGO</p><i>90%</i>
+					<p>WORDPRESS</p><i>85%</i>
+					<p>LANGAGE C</p><i>98%</i>
+					<p>JAVA</p><i>95%</i>
+					<p>PYTHON</p><i>95%</i>
+					<p>MYSQL | ORACLE</p><i>95%</i>
+					<p>MODELISATION UML</p><i>95%</i>
+					<p>ADMIN SYSTEMES</p><i>98%</i>
+					<p>ADMIN RESEAUX</p><i>95%</i>
+					<p>KALI LINUX</p><i>98%</i>
+					<p>NETWORK SCANNING | FIND VULNERABILITIES</p><i>98%</i>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Curieux, Créatif, Autonome, Organisé, Dynamique, Polyvalent, Travail d'équipe, Collaboration en distance, Apprentissage rapide</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Hobbies</h2>
+				<div class="content">
+					<p>Sport, Lecture, Voyages, Game</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

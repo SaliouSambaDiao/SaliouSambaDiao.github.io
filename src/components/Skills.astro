@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Du Dev à la Prod</h2>
+		<p>Passionné par l'univers du développement informatique, j'ai découvert une véritable passion pour le processus complet, de la conception et du développement jusqu'à la mise en production. J'aime relever le défi excitant de transformer des idées en applications fonctionnelles et accessibles aux utilisateurs finaux. Du développement initial au déploiement en production, chaque étape du processus m'inspire et me motive à atteindre l'excellence. J'apprécie particulièrement l'aspect collaboratif de cette aventure, en travaillant étroitement avec les équipes de développement, de test et d'exploitation pour garantir une transition fluide et réussie. La satisfaction de voir mon travail prendre vie et être utilisé par les utilisateurs est une source de motivation inépuisable qui me pousse à continuellement approfondir mes compétences et à innover. Travailler du développement à la production est pour moi bien plus qu'une profession, c'est une véritable passion qui alimente mon désir de contribuer au monde numérique en constante évolution.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Esprit d'Équipe</h2>
+		<p>En tant qu'élève-ingénieur en informatique, je suis animé par un esprit d'équipe inébranlable et convaincu que la collaboration est essentielle pour atteindre des objectifs ambitieux. J'apprécie travailler en étroite collaboration avec mes pairs pour créer des solutions innovantes et surmonter des défis complexes. Je valorise l'écoute attentive, le partage d'idées et l'inclusivité, car je crois fermement que les meilleures réalisations proviennent d'un travail collectif où chacun apporte ses compétences uniques. Faire partie d'une équipe solide est une source d'inspiration pour moi, car ensemble, nous pouvons surmonter les obstacles et atteindre l'excellence. L'esprit d'équipe est la pierre angulaire de mon parcours en informatique, et je suis impatient de continuer à apprendre et à grandir en collaboration avec d'autres esprits passionnés.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Apprentissage Rapide</h2>
+		<p>L'apprentissage rapide est au cœur de mon approche en tant qu'élève-ingénieur en informatique. Je suis passionné par la découverte de nouvelles technologies, langages de programmation et concepts innovants, et je suis toujours avide d'apprendre et de me perfectionner. Mon esprit curieux et ma capacité à assimiler rapidement de nouvelles informations me permettent de m'adapter rapidement aux défis en constante évolution de l'informatique. Grâce à mon désir d'apprendre et à ma motivation intrinsèque, je suis capable de maîtriser rapidement de nouveaux sujets et de les appliquer de manière pratique dans des projets concrets. En tant qu'élève-ingénieur, je considère l'apprentissage rapide comme un atout essentiel pour rester à la pointe de l'innovation technologique et contribuer de manière significative à des projets informatiques complexes.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
