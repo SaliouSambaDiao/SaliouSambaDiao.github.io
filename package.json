@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.8.5"
+    "astro": "^2.8.5",
+    "latest-version": "^7.0.0"
   }
 }
