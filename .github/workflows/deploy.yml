@@ -80,3 +80,5 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+        env:
+          ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
