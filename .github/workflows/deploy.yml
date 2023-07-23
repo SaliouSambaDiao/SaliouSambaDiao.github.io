@@ -81,4 +81,5 @@ jobs:
           branch: gh-pages
           folder: dist
         env:
-          ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          ACCESS_TOKEN: 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
+          # ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
